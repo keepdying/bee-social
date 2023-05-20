@@ -10,7 +10,7 @@ function updateInputTextSize(textArea?: HTMLTextAreaElement) {
   textArea.style.height = `${textArea.scrollHeight}px`;
 }
 
-export default function NewTweetForm(){
+export function NewTweetForm(){
   const session = useSession();
   if (session.status !== "authenticated") return null;
 
